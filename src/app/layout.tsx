@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
+import { Caveat } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import wall from "../../public/wall.png";
+import glass from "../../public/glass.png";
+import classNames from "classnames";
 
-const inter = Inter({ subsets: ["latin"] });
+const noto = Noto_Serif({ subsets: ["latin"], variable: "--font-noto" });
+const cav = Caveat({ subsets: ["latin"], variable: "--font-cav" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={classNames(noto.className, cav.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
