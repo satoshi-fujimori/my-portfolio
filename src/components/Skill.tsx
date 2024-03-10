@@ -14,7 +14,8 @@ export const logos: LogoProps[] = [
   {
     icon: CSS3_logo,
     name: "css",
-    comment: "デザインに忠実に、BEMを使った設計思想でスタイル付けができます。",
+    comment:
+      "デザインに忠実に、BEMを使った設計思想でスタイル付けができます。レスポンシブデザインにも対応",
   },
   {
     icon: HTML5_Logo,
