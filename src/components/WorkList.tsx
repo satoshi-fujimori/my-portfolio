@@ -1,4 +1,3 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import ShoppingApp1 from "../../public/shoppingApp1.png";
 import ShoppingApp2 from "../../public/shoppingApp2.png";
