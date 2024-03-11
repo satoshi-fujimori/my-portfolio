@@ -8,7 +8,6 @@ import {
 } from "@heroicons/react/16/solid";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { ReactNode } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const headerContents: {
   title: string;
