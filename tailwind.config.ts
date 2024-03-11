@@ -83,12 +83,23 @@ const config = {
             opacity: "1",
           },
         },
+        "fade-in-bottom": {
+          "0%": {
+            transform: "translateY(50px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "tracking-in-contract":
           "tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s  both",
+        "fade-in-bottom": "fade-in-bottom 0.6s ease-out   both",
       },
     },
   },

@@ -8,6 +8,7 @@ import reactlogo from "../../public/react-logo.svg";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ReactNode } from "react";
 import SkillCard from "./SkillCard";
+import { FadeInBottom } from "./FadeInBottom";
 
 export type LogoProps = { icon: StaticImport; name: string; comment: string };
 export const logos: LogoProps[] = [
@@ -50,13 +51,15 @@ export const logos: LogoProps[] = [
 
 export default function Skill() {
   return (
-    <div className="mx-10 my-10" id="skill">
-      <h2 className="text-xl m-2 font-bold">スキル</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-between m-2">
-        {logos.map((logo, i) => (
-          <SkillCard logo={logo} index={i} key={i} />
-        ))}
+    <FadeInBottom>
+      <div className="mx-10 my-10" id="skill">
+        <h2 className="text-xl m-2 font-bold">スキル</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-between m-2">
+          {logos.map((logo, i) => (
+            <SkillCard logo={logo} index={i} key={i} />
+          ))}
+        </div>
       </div>
-    </div>
+    </FadeInBottom>
   );
 }
