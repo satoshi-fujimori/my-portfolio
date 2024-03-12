@@ -3,7 +3,7 @@ import ShoppingApp1 from "../../public/shoppingApp1.png";
 import ShoppingApp2 from "../../public/shoppingApp2.png";
 import OrderApp1 from "../../public/orderApp1.png";
 import OrderApp2 from "../../public/orderApp2.png";
-import RecordApp1 from "../../public/recordApp1.png";
+import RecordApp2 from "../../public/recordApp2.png";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import { FadeInBottom } from "./FadeInBottom";
 
@@ -106,7 +106,7 @@ export default function WorkList() {
               </div>
             </div>
             <div className="flex gap-x-4 overflow-x-auto">
-              <Image src={RecordApp1} alt="app1" />
+              <Image src={RecordApp2} alt="app1" />
             </div>
           </div>
         </div>
