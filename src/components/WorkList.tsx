@@ -3,9 +3,11 @@ import ShoppingApp1 from "../../public/shoppingApp1.png";
 import ShoppingApp2 from "../../public/shoppingApp2.png";
 import OrderApp1 from "../../public/orderApp1.png";
 import OrderApp2 from "../../public/orderApp2.png";
-import RecordApp2 from "../../public/recordApp2.png";
 import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import { FadeInBottom } from "./FadeInBottom";
+import RecorderApp1 from "../../public/articleRecorder1.gif";
+import RecorderApp2 from "../../public/articleRecorder2.gif";
+import RecorderApp3 from "../../public/articleRecorder3.gif";
 
 export default function WorkList() {
   return (
@@ -33,13 +35,13 @@ export default function WorkList() {
                     DEMO
                     <ArrowUpRightIcon className="w-6" />
                   </a>
-                  <a
+                  {/*<a
                     href="https://github.com/satoshi-fujimori/202402-shopping-app"
                     className="font-title flex"
                   >
                     SOURCE
                     <ArrowUpRightIcon className="w-6" />
-                  </a>
+  </a>*/}
                 </div>
               </div>
               <div className="flex gap-x-4 overflow-x-auto">
@@ -66,13 +68,13 @@ export default function WorkList() {
                     DEMO
                     <ArrowUpRightIcon className="w-6" />
                   </a>
-                  <a
+                  {/*<a
                     href="https://github.com/satoshi-fujimori/order-app"
                     className="font-title flex"
                   >
                     SOURCE
                     <ArrowUpRightIcon className="w-6" />
-                  </a>
+  </a>*/}
                 </div>
               </div>
             </div>
@@ -90,10 +92,10 @@ export default function WorkList() {
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
                 <p>
-                  QiitaAPIで記事を取得し、読んだ記録をデータベースに格納し管理
+                  QiitaAPIで記事を取得し、読んだ記録をデータベースに格納し管理。またQiitaの過去の各月のタグ別の記事数をチャート表示
                 </p>
                 <p className="text-xs">（制作期間：土日を中心に３日程度）</p>
-                <div className="flex gap-x-4">
+                {/*<div className="flex gap-x-4">
                   <a href="" className="font-title flex">
                     DEMO
                     <ArrowUpRightIcon className="w-6" />
@@ -101,12 +103,14 @@ export default function WorkList() {
                   <a href="" className="font-title flex">
                     SOURCE
                     <ArrowUpRightIcon className="w-6" />
-                  </a>
-                </div>
+</a>*
+</div>*/}
               </div>
             </div>
-            <div className="flex gap-x-4 overflow-x-auto">
-              <Image src={RecordApp2} alt="app1" />
+            <div className="flex gap-x-4 overflow-x-auto md:overflow-visible">
+              <Image src={RecorderApp1} alt="app1" />
+              <Image src={RecorderApp2} alt="app1" />
+              <Image src={RecorderApp3} alt="app1" />
             </div>
           </div>
         </div>
